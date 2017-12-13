@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tec.com.firebasedemo">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="PINAGSAM-APP!"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".PhoneNumberAuthentication"
+            android:theme="@style/AppTheme.Transition">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BlankActivity" />
+        <activity
+            android:name=".SendMessage_AdminActivity"
+            android:label="Send Message to All" />
+        <activity
+            android:name=".Code_AdminActivity"
+            android:label="Code Authentication" />
+        <activity
+            android:name=".CodeLanding_AdminActivity"
+            android:label="Code Authentication" />
+        <activity
+            android:name=".SignUp_AdminActivity"
+            android:label="Admin Sign Up" />
+        <activity
+            android:name=".Main_AdminActivity"
+            android:label="Admin Main" />
+        <activity
+            android:name=".LogIn_AdminActivity"
+            android:label="Admin Log In" />
+        <activity
+            android:name=".EmerChange_AdminActivity"
+            android:label="Emergency Call" />
+        <activity
+            android:name=".NewsUpload_AdminActivity"
+            android:label="Upload News and Events" />
+        <activity android:name=".NewsRetrieve_Activity" />
+        <activity
+            android:name=".DisplayImagesActivity"
+            android:label="News and Events" />
+        <activity android:name=".RecyclerViewAdapter" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".OrgActivity"
+            android:label="Barangay Officials" />
+        <activity
+            android:name=".ContactActivity"
+            android:label="Contact and Information" />
+        <activity android:name=".EmerActivity" />
+        <activity android:name=".Emer1Activity" />
+        <activity android:name=".Emer2Activity" />
+        <activity android:name=".Emer3Activity" />
+        <activity
+            android:name=".DocumentsActivity"
+            android:label="Documents and Ordinances" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About the Barangay" />
+        <activity android:name=".Chat" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".UserDetails" />
+        <activity android:name=".Users"></activity>
+    </application>
+
+</manifest>

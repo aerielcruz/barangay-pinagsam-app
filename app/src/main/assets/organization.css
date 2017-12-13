@@ -1,0 +1,4 @@
+#wrapper .container {float: left; margin: 0 auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+#wrapper .container img {width: 100px; height: 100px; padding-right: 20px; float: left;}
+#wrapper .container .info {float: left; padding-right: 20px;}
+#wrapper .container .info h3 {width: 200px;}

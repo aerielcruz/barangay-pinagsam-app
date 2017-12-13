@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"><![CDATA[
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    ]]>
+    <item
+        android:id="@+id/adminbtn"
+        android:checkable="false"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+
+        android:title="Admin">
+
+    </item>
+    <!--
+    <item
+        android:id="@+id/action_dropdown1"
+        android:title="dropdown_1" />
+    -->
+</menu>
